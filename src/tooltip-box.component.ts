@@ -28,7 +28,7 @@ import {
   styles: [
     `
       :host {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0,154,219,0.8);
         color: white;
         display: inline-block;
         position: fixed;
