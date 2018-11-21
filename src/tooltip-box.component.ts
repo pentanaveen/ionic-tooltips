@@ -17,7 +17,7 @@ import {
 
 @Component({
   selector: 'tooltip-box',
-  template: '{{ text }}',
+  template: '<div [innerHtml]="text"></div>',
   animations: [
     trigger('fade', [
       state('visible', style({ opacity: 1 })),
@@ -45,10 +45,10 @@ import {
         height: 0;
       }
     `,
-    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid rgba(0,0,0,0.8); top: -10px; }',
-    ':host.has-arrow.arrow-left:before { border-right: 5px solid rgba(0,0,0,0.8); left: -10px; }',
-    ':host.has-arrow.arrow-right:before { border-left: 5px solid rgba(0,0,0,0.8); right: -10px; }',
-    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid rgba(0,0,0,0.8); bottom: -10px; }'
+    ':host.has-arrow.arrow-top:before { border-bottom: 5px solid rgba(0,154,219,0.8); top: -10px; }',
+    ':host.has-arrow.arrow-left:before { border-right: 5px solid rgba(0,154,219,0.8); left: -10px; }',
+    ':host.has-arrow.arrow-right:before { border-left: 5px solid rgba(0,154,219,0.8); right: -10px; }',
+    ':host.has-arrow.arrow-bottom:before { border-top: 5px solid rgba(0,154,219,0.8); bottom: -10px; }'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
